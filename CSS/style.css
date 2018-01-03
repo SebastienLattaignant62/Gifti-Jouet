@@ -3,6 +3,42 @@ body {
   margin: 50px;
   background-color: rgb(142, 249, 137);
 }
+
+/*début logo & barre de recherche*/
+.logo{
+  float: left;
+  position: absolute;
+  width: 20%;
+  height: auto;
+}
+#recherche {
+  border: 1px solid black;
+  width: 350px;
+  height: 50px;
+  position: relative;
+  margin-left: 50%;
+}
+textarea {
+  resize: none;
+  position: absolute;
+  width: 300px;
+}
+#loupe {
+  float: right;
+}
+#loupe svg:not(:root).svg-inline--fa {
+    overflow: visible;
+    color: #EE8844;
+    float: right;
+}
+.panier {
+  float: right;margin-top: 0%;
+}
+.panier svg:not(:root).svg-inline--fa {
+    overflow: visible;
+    color: #8d8d8f;
+}
+/*fin logo & barre de recherche*/
 /*début barre de navigation*/
 nav {
   width: 100%;
@@ -28,22 +64,6 @@ a.decolien {
   text-decoration: none;
 }
 /*fin de la barre de navigation*/
-/*début barre de recherche*/
-#recherche {
-  border: 1px solid black;
-  width: 300px;
-  height: 50px;
-  position: relative;
-  float: right;
-}
-textarea {
-  resize: none;
-  position: absolute;
-}
-#loupe {
-  float: right;
-}
-/*fin barre de recherche*/
 /*début section home*/
 #home {
   border: 1px solid black;
@@ -115,4 +135,10 @@ footer {
   width: 100%;
   height: 50px;
 }
+ /*couleur icone reseaux: */
+footer svg:not(:root).svg-inline--fa {
+    overflow: visible;
+    color: #EE8844;
+}
+
 /*fin section footer*/
