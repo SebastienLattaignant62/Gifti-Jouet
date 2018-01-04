@@ -88,7 +88,7 @@ a.decolien {
   background-color: white;
 }
 #topvente {
-  width: 100px;
+  width: 80px;
   height: 500px;
   float: left;
   border: 1px solid black;
@@ -104,7 +104,7 @@ a.decolien {
 
 }
 #toppromo {
-  width: 100px;
+  width: 80px;
   height: 500px;
   float: right;
   border: 1px solid black;
