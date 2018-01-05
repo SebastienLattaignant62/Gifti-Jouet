@@ -10,7 +10,7 @@ body {
   margin-left: 80px;
   margin-right: 80px;
   margin-top: 50px;
-  background-color: red;
+  background-color: rgb(181, 204, 224);
 }
 
 /*début logo & barre de recherche*/
@@ -38,9 +38,9 @@ input {
   padding: 10px 10px 10px;
 }
 #loupe {
-  float: right;
   position: absolute;
-  margin-left: 330px;
+  margin-left: 340px;
+  margin-top: 5px;
 }
 #loupe svg:not(:root).svg-inline--fa {
     overflow: visible;
@@ -58,6 +58,16 @@ input {
 }
 /*fin logo & barre de recherche*/
 /*début barre de navigation*/
+#acceuil {
+  position: absolute;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+#acceuil svg:not(:root).svg-inline--fa {
+  overflow: visible;
+  color: #8d8d8f;
+}
+
 nav {
   width: 100%;
   height: 100px;
@@ -85,25 +95,84 @@ a.decolien {
 #home {
   width: 100%;
   height: 1300px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
   position: relative;
+  padding-top: 20px;
 }
-.prix {
-  font-family: DKSun;
-  margin-top: 260px;
-  margin-left: 190px;
+#divimgsolde {
+  width: 100%;
+  height: 325px;
+}
+.imgsolde {
+  width: 100%;
+  height: 100%;
+}
+.puzzle {
+  width: 50px;
+  height: 50px;
   position: absolute;
+}
+.prixvente {
+  font-family: DKSun;
+  position: absolute;
+  font-weight: bold;
+  margin-left: 190px;
+}
+#prixvente1{
+  margin-top: 155px;
+
+}
+#prixvente2 {
+  margin-top: 270px;
+}
+#prixvente3 {
+  margin-top: 390px;
+}
+#prixvente4 {
+  margin-top: 505px;
+}
+.prixpromo {
+  font-family: DKSun;
+  position: absolute;
+  font-weight: bold;
+}
+.newprice {
+  font-size: 22px;
+  color: rgb(255, 191, 0);
+}
+#prixpromo1 {
+  margin-left: 915px;
+  margin-top: 155px;
+  text-align: right;
+
+}
+#prixpromo2 {
+  margin-left: 910px;
+  margin-top: 270px;
+  text-align: right;
+}
+#prixpromo3 {
+  margin-left: 910px;
+  margin-top: 390px;
+  text-align: right;
+}
+#prixpromo4 {
+  margin-left: 870px;
+  margin-top: 505px;
+  text-align: right;
 }
 #topvente {
   width: 80px;
   height: 600px;
   float: left;
-  border: 1px solid black;
+  border-radius: 2px;
   margin-left: 100px;
-  margin-top: 100px;
   display:flex;
   flex-direction: column;
   justify-content: space-around;
+}
+del {
+  color: rgb(144, 144, 144);
 }
 .produitstopvente {
   width: 100%;
@@ -115,9 +184,7 @@ a.decolien {
   width: 80px;
   height: 600px;
   float: right;
-  border: 1px solid black;
   margin-right: 100px;
-  margin-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -141,12 +208,10 @@ a.decolien {
 }
 
 .diapo {
-  border: 1px solid black;
   width: 500px;
   height: 510px;
   background-image: url("../IMG/garcon/playmobil 59.99.jpg");
   margin: auto;
-  padding-top: 100px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
