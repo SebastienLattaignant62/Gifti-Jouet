@@ -126,10 +126,10 @@ a.decolien {
   margin-top: 270px;
 }
 #prixvente3 {
-  margin-top: 390px;
+  margin-top: 405px;
 }
 #prixvente4 {
-  margin-top: 505px;
+  margin-top: 515px;
 }
 .prixpromo {
   font-family: DKSun;
@@ -142,7 +142,7 @@ a.decolien {
 }
 #prixpromo1 {
   margin-left: 915px;
-  margin-top: 155px;
+  margin-top: 170px;
   text-align: right;
 
 }
@@ -153,12 +153,12 @@ a.decolien {
 }
 #prixpromo3 {
   margin-left: 910px;
-  margin-top: 390px;
+  margin-top: 400px;
   text-align: right;
 }
 #prixpromo4 {
   margin-left: 870px;
-  margin-top: 505px;
+  margin-top: 500px;
   text-align: right;
 }
 #topvente {
@@ -210,7 +210,7 @@ del {
 .diapo {
   width: 500px;
   height: 510px;
-  background-image: url("../IMG/garcon/playmobil 59.99.jpg");
+  background-image: url("../IMG/garcon/playmobil.png");
   margin: auto;
   background-size: contain;
   background-position: center;
@@ -218,42 +218,45 @@ del {
 
 
   webkit-animation-name: diapo;
-  webkit-animation-duration: 20s;
+  webkit-animation-duration: 30s;
   webkit-animation-timing-function: linear;
   webkit-animation-iteration-count: infinite;
   webkit-animation-direction: normal;
 
   moz-animation-name: diapo;
-  moz-animation-duration: 20s;
+  moz-animation-duration: 30s;
   moz-animation-timing-function: linear;
   moz-animation-iteration-count: infinite;
   moz-animation-direction: normal;
 
 
   animation-name: diapo;
-  animation-duration: 20s;
+  animation-duration: 30s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: normal;
 }
 
 @-moz-keyframes diapo{
-  0%{background-image: url("../IMG/garcon/robotEvolution 59.99.jpg");}
-  33%{background-image: url("../IMG/garcon/SkyDragon 29.99.jpg");}
-  66%{background-image: url("../IMG/garcon/talky 29.00.jpg.");}
+  0%{background-image: url("../IMG/garcon/robotEvolution.png");}
+  15%{background-image: url("../IMG/logo/promomickey.gif");}
+  33%{background-image: url("../IMG/garcon/SkyDragon.png");}
+  66%{background-image: url("../IMG/garcon/talky.png");}
 }
 
 @-webkit-keyframes diapo{
-  0%{background-image: url("../IMG/garcon/robotEvolution 59.99.jpg");}
-  33%{background-image: url("../IMG/garcon/SkyDragon 29.99.jpg");}
-  66%{background-image: url("../IMG/garcon/talky 29.00.jpg");}
+  0%{background-image: url("../IMG/garcon/robotEvolution.png");}
+  15%{background-image: url("../IMG/logo/promomickey.gif");}
+  33%{background-image: url("../IMG/garcon/SkyDragon.png");}
+  66%{background-image: url("../IMG/garcon/talky.png");}
 }
 
 
 @keyframes diapo{
-  0%{background-image: url("../IMG/garcon/robotEvolution 59.99.jpg");}
-  33%{background-image: url("../IMG/garcon/SkyDragon 29.99.jpg");}
-  66%{background-image: url("../IMG/garcon/talky 29.00.jpg");}
+  0%{background-image: url("../IMG/garcon/robotEvolution.png");}
+  15%{background-image: url("../IMG/logo/promomickey.gif");}
+  33%{background-image: url("../IMG/garcon/SkyDragon.png");}
+  66%{background-image: url("../IMG/garcon/talky.png");}
 }
 
 
