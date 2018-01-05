@@ -82,7 +82,7 @@ a.decolien {
 }
 /*fin de la barre de navigation*/
 /*début section contact*/
-#contactnous {
+#contactnous{
   border: 1px solid black;
   width: 100%;
   height: 100%;
@@ -95,12 +95,13 @@ h1{
 }
 
  #conteneur{
-  width: 100%;
+  width: 90%;
   min-height: 100%;
   border: 1px solid black;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin: auto;
 }
 .element1{
   width: 300px;
@@ -126,17 +127,32 @@ h1{
   background-size: contain;
   background-repeat: no-repeat;
 }
-.textdessous {
+.texttel {
   width: 300px;
-  height: 400px;
+  height: 200px;
   border: 1px solid black;
 }
-.textdessous2{
+.textmail {
   width: 300px;
-  height: 400px;
+  height: 200px;
   border: 1px solid black;
 }
+.textcourrier {
+  width: 300px;
+  height: 200px;
+  border: 1px solid black;
 }
+
+#secondcontact{
+  width: 600px;
+  height: 600px;
+  border: 1px solid black;
+  margin: auto;
+}
+/* debut formulaire */
+
+/* fin du formulaire */
+
 /*fin section contact*/
 /*début section footer*/
 footer {
