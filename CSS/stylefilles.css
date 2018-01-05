@@ -10,7 +10,7 @@ body {
   margin-left: 80px;
   margin-right: 80px;
   margin-top: 50px;
-  background-color: red;
+  background-color: rgba(217, 213, 210);            /**changement couleur temporaire*/
 }
 
 /*début logo & barre de recherche*/
@@ -102,3 +102,69 @@ footer svg:not(:root).svg-inline--fa {
 }
 
 /*fin section footer*/
+
+/***debut page fille ***/
+
+h1 {
+  font-family: DKSun;
+  font-size: 40px;
+  color:#ee42e9;                    /***changement page couleur FONCE***/
+  text-align: center;
+}
+/*debut filtre*/
+#filtre {
+  border: 1px solid black;
+  width: 25%;
+  height: auto;
+  float: left;
+}
+#filtre h4 {
+font-family: DKSun;
+color:#ee42e9;                     /***changement page couleur FONCE***/
+}
+#filtre li {
+list-style: none;
+cursor: pointer;
+}
+/*debut grille flexbox */
+#flexboxproduit {
+  width: 70%;
+  height: 100% auto;
+  display: flex;
+  border: 1px solid black;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content:space-around;
+}
+/*debut produit : img+contenu*/
+.produit img {
+  width: 200px;
+  height: 200px;
+  box-shadow: 2px 5px 5px grey;
+}
+.contenuproduit {
+  width: 200px;
+  height: auto;
+  border: 1px solid black;
+  text-align: center;
+  background-color: white;
+}
+.ajoutpanier {
+  width: 150px;
+  height:25px;
+  background-color: #f49cf1;              /***changement page couleur CLAIRE***/
+  border: 3px solid #ee42e9;              /***changement page couleur FONCE***/
+  border-radius: 10px;
+  box-shadow: 2px 5px 5px grey;
+  font-family: DKSun;
+  font-size: 18px;
+  color: black;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.ajoutpanier:active {
+  background-color: #ee42e9;              /***changement page couleur FONCE***/
+  cursor: pointer;
+}
+
+/***fin page fille ***/
