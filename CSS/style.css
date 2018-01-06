@@ -102,6 +102,7 @@ a.decolien {
 #divimgsolde {
   width: 100%;
   height: 325px;
+  padding-bottom: 100px;
 }
 .imgsolde {
   width: 100%;
@@ -112,6 +113,13 @@ a.decolien {
   height: 120px;
   position: absolute;
   margin-left: -110px;
+}
+#puzzlepromo {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  margin-left: 780px;
+
 }
 
 .prixvente {
@@ -202,6 +210,16 @@ del {
   margin-left: 124px;
   margin-top: 36px;
 }
+#titrepromo {
+  text-align: center;
+  font-family: DKSun;
+  font-size: 28px;
+  position: absolute;
+  z-index: 2;
+  margin-left: 1012px;
+  margin-top: 36px;
+}
+
 
 .produitstoppromo {
   width: 100%;
@@ -219,7 +237,7 @@ del {
 .diapo {
   width: 500px;
   height: 510px;
-  background-image: url("../IMG/garcon/playmobil.png");
+  background-image: url("../IMG/logo/promo5.png");
   margin: auto;
   background-size: contain;
   background-position: center;
@@ -249,33 +267,43 @@ del {
 @-moz-keyframes diapo{
   0%{background-image: url("../IMG/logo/promo2.jpg");}
   15%{background-image: url("../IMG/logo/promomickey.gif");}
-  33%{background-image: url("../IMG/garcon/SkyDragon.png");}
-  66%{background-image: url("../IMG/garcon/talky.png");}
+  33%{background-image: url("../IMG/logo/promo3.png");}
+  66%{background-image: url("../IMG/logo/promo4.jpg");}
 }
 
 @-webkit-keyframes diapo{
   0%{background-image: url("../IMG/logo/promo2.jpg");}
   15%{background-image: url("../IMG/logo/promomickey.gif");}
-  33%{background-image: url("../IMG/garcon/SkyDragon.png");}
-  66%{background-image: url("../IMG/garcon/talky.png");}
+  33%{background-image: url("../IMG/logo/promo3.png");}
+  66%{background-image: url("../IMG/logo/promo4.jpg");}
 }
 
 
 @keyframes diapo{
   0%{background-image: url("../IMG/logo/promo2.jpg");}
   15%{background-image: url("../IMG/logo/promomickey.gif");}
-  33%{background-image: url("../IMG/garcon/SkyDragon.png");}
-  66%{background-image: url("../IMG/garcon/talky.png");}
+  33%{background-image: url("../IMG/logo/promo3.png");}
+  66%{background-image: url("../IMG/logo/promo4.jpg");}
 }
 
 
-/*début section contact*/
-#contact {
+/*début section fidélité*/
+#fidélité {
   border: 1px solid black;
   width: 100%;
   height: 700px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
-/*fin section contact*/
+#fidélitéin {
+  width: 1000px;
+  height: 400px;
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 150px;
+  background-color: #7df687;
+  border-radius: 50px;
+}
+/*fin section fidélité*/
 /*début section footer*/
 footer {
   border: 1px solid black;
