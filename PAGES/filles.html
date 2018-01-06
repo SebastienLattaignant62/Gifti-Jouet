@@ -21,6 +21,7 @@
       </section>
       <!-- début barre de navigation -->
       <nav>
+        <a id="acceuil" href="../index.html"><i class="fas fa-home fa-3x"></i></a>
         <ul>
           <li class="liennav"><a class="decolien" href="moinsde5ans.html">Moins de 5 ans</a></li>
           <li class="liennav"><a class="decolien" href="filles.html">Filles</a></li>
@@ -36,27 +37,66 @@
       <div id="univers">
         <h1>Univers des FILLES</h1>
         <!-- debut de la div filtre -->
-        <div id="filtre">
+        <form id="filtre">
           <h3>Votre selection:</h3>
-          <ul>
-            <li><h4>Votre budget ?</h4></li>
-            <li>Moins de 20€</li>
-            <li>De 20 à 40€</li>
-            <li>De 40 à 60€</li>
-            <li>De 60 à 80€</li>
-            <li>Plus de 80€</li>
-          </ul>
-          <ul>
-            <li><h4>Une marque ?</h4></li>
-            <li>Lansay</li>
-            <li>Disney</li>
-            <li>Canal toys</li>
-            <li>Lego</li>
-            <li>Bandaï</li>
-            <li>Mattel</li>
-            <li></li>
-          </ul>
-        </div>
+            <fieldset>
+              <legend><h4>Votre budget ?</h4></legend>
+              <div>
+                <li><input type="checkbox" name="budget" style="cursor:pointer" value="">
+                <label for="budget">Moins de 20€</label></li>
+                <li><input type="checkbox" name="budget" style="cursor:pointer" value="">
+                <label for="budget">De 20 à 40€</label></li>
+                <li><input type="checkbox" name="budget" style="cursor:pointer" value="">
+                <label for="budget">De 40 à 60€</label></li>
+                <li><input type="checkbox" name="budget" style="cursor:pointer" value="">
+                <label for="budget">De 60 à 80€</label></li>
+                <li><input type="checkbox" name="budget" style="cursor:pointer" value="">
+                <label for="budget">Plus de 80€</label></li>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend><h4>Votre budget ?</h4></legend>
+              <div>
+                <li><input type="checkbox" name="budget" style="cursor:pointer" value="">
+                <label for="budget">Moins de 20€</label></li>
+                <li><input type="checkbox" name="budget" style="cursor:pointer" value="">
+                <label for="budget">De 20 à 40€</label></li>
+                <li><input type="checkbox" name="budget" style="cursor:pointer" value="">
+                <label for="budget">De 40 à 60€</label></li>
+                <li><input type="checkbox" name="budget" style="cursor:pointer" value="">
+                <label for="budget">De 60 à 80€</label></li>
+                <li><input type="checkbox" name="budget" style="cursor:pointer" value="">
+                <label for="budget">Plus de 80€</label></li>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend><h4>Une marque ?</h4></legend>
+              <div>
+                <li><input type="checkbox" name="marque" style="cursor:pointer" value="">
+                <label for="Lancay">Lansay</label></li>
+                <li><input type="checkbox" name="marque" style="cursor:pointer" value="">
+                <label for="Disney">Disney</label></li>
+                <li><input type="checkbox" name="marque" style="cursor:pointer" value="">
+                <label for="Canal toys">Canal toys</label></li>
+                <li><input type="checkbox" name="marque" style="cursor:pointer" value="">
+                <label for="Lego">Lego</label></li>
+                <li><input type="checkbox" name="marque" style="cursor:pointer" value="">
+                <label for="Bandaï">Bandaï</label></li>
+                <li><input type="checkbox" name="marque" style="cursor:pointer" value="">
+                <label for="Mattel">Mattel</label></li>
+              </div>
+            </fieldset>
+            <ul>
+              <li><h4 class="titrefiltre">Une marque ?</h4></li>
+              <li>Lansay</li>
+              <li>Disney</li>
+              <li>Canal toys</li>
+              <li>Lego</li>
+              <li>Bandaï</li>
+              <li>Mattel</li>
+              <li></li>
+            </ul>
+        </form>
         <!-- fin de la div filtre -->
         <!-- début grille flexbox filles-->
         <div id= "flexboxproduit">
