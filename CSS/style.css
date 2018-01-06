@@ -107,29 +107,31 @@ a.decolien {
   width: 100%;
   height: 100%;
 }
-.puzzle {
-  width: 50px;
-  height: 50px;
+#puzzlevente {
+  width: 120px;
+  height: 120px;
   position: absolute;
+  margin-left: -110px;
 }
+
 .prixvente {
   font-family: DKSun;
   position: absolute;
   font-weight: bold;
-  margin-left: 190px;
+  margin-left: 205px;
 }
 #prixvente1{
-  margin-top: 155px;
+  margin-top: 165px;
 
 }
 #prixvente2 {
-  margin-top: 270px;
+  margin-top: 320px;
 }
 #prixvente3 {
-  margin-top: 405px;
+  margin-top: 480px;
 }
 #prixvente4 {
-  margin-top: 515px;
+  margin-top: 630px;
 }
 .prixpromo {
   font-family: DKSun;
@@ -141,32 +143,33 @@ a.decolien {
   color: rgb(255, 191, 0);
 }
 #prixpromo1 {
-  margin-left: 915px;
-  margin-top: 170px;
+  margin-left: 900px;
+  margin-top: 190px;
   text-align: right;
 
 }
 #prixpromo2 {
-  margin-left: 910px;
-  margin-top: 270px;
+  margin-left: 890px;
+  margin-top: 325px;
   text-align: right;
 }
 #prixpromo3 {
-  margin-left: 910px;
-  margin-top: 400px;
+  margin-left: 890px;
+  margin-top: 480px;
   text-align: right;
 }
 #prixpromo4 {
-  margin-left: 870px;
-  margin-top: 500px;
+  margin-left: 845px;
+  margin-top: 620px;
   text-align: right;
 }
 #topvente {
-  width: 80px;
+  width: 100px;
   height: 600px;
   float: left;
   border-radius: 2px;
   margin-left: 100px;
+  margin-top: 150px;
   display:flex;
   flex-direction: column;
   justify-content: space-around;
@@ -176,27 +179,33 @@ del {
 }
 .produitstopvente {
   width: 100%;
-  height: 90px;
+  height: 130px;
 
 
 }
 #toppromo {
-  width: 80px;
+  width: 100px;
   height: 600px;
   float: right;
   margin-right: 100px;
+  margin-top: 150px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.titretop {
+#titrevente {
   text-align: center;
   font-family: DKSun;
-  font-size: 30px;
+  font-size: 28px;
+  position: absolute;
+  z-index: 2;
+  margin-left: 124px;
+  margin-top: 36px;
 }
+
 .produitstoppromo {
   width: 100%;
-  height: 90px;
+  height: 130px;
 }
 .imgtop {
   height: 100%;
@@ -238,14 +247,14 @@ del {
 }
 
 @-moz-keyframes diapo{
-  0%{background-image: url("../IMG/garcon/robotEvolution.png");}
+  0%{background-image: url("../IMG/logo/promo2.jpg");}
   15%{background-image: url("../IMG/logo/promomickey.gif");}
   33%{background-image: url("../IMG/garcon/SkyDragon.png");}
   66%{background-image: url("../IMG/garcon/talky.png");}
 }
 
 @-webkit-keyframes diapo{
-  0%{background-image: url("../IMG/garcon/robotEvolution.png");}
+  0%{background-image: url("../IMG/logo/promo2.jpg");}
   15%{background-image: url("../IMG/logo/promomickey.gif");}
   33%{background-image: url("../IMG/garcon/SkyDragon.png");}
   66%{background-image: url("../IMG/garcon/talky.png");}
@@ -253,7 +262,7 @@ del {
 
 
 @keyframes diapo{
-  0%{background-image: url("../IMG/garcon/robotEvolution.png");}
+  0%{background-image: url("../IMG/logo/promo2.jpg");}
   15%{background-image: url("../IMG/logo/promomickey.gif");}
   33%{background-image: url("../IMG/garcon/SkyDragon.png");}
   66%{background-image: url("../IMG/garcon/talky.png");}
