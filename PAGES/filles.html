@@ -34,11 +34,12 @@
       </nav>
     <!-- fin de la barre de navigation -->
     </header>
-      <div id="univers">
-        <h1>Univers des FILLES</h1>
+    <!-- debut section page univers -->
+      <section id="univers">
+        <h1>univers des FILLES</h1>
         <!-- debut de la div filtre -->
         <form id="filtre">
-          <h3>Votre selection:</h3>
+          <h3>Filtrez votre selection ici:</h3>
             <fieldset>
               <legend><h4>Votre budget ?</h4></legend>
               <div>
@@ -55,18 +56,19 @@
               </div>
             </fieldset>
             <fieldset>
-              <legend><h4>Votre budget ?</h4></legend>
+              <legend><h4>Ses Héros / Héroïnes ?</h4></legend>
               <div>
-                <li><input type="checkbox" name="budget" style="cursor:pointer" value="">
-                <label for="budget">Moins de 20€</label></li>
-                <li><input type="checkbox" name="budget" style="cursor:pointer" value="">
-                <label for="budget">De 20 à 40€</label></li>
-                <li><input type="checkbox" name="budget" style="cursor:pointer" value="">
-                <label for="budget">De 40 à 60€</label></li>
-                <li><input type="checkbox" name="budget" style="cursor:pointer" value="">
-                <label for="budget">De 60 à 80€</label></li>
-                <li><input type="checkbox" name="budget" style="cursor:pointer" value="">
-                <label for="budget">Plus de 80€</label></li>
+                <li><input type="checkbox" name="heros" style="cursor:pointer" value="">
+                <label for="Barbie">Barbie</label></li>
+                <li><input type="checkbox" name="heros" style="cursor:pointer" value="">
+                <label for="vaiana">Vaiana</label></li>
+                <li><input type="checkbox" name="heros" style="cursor:pointer" value="">
+                <label for="Super Girl">Super Girl</label></li>
+                <li><input type="checkbox" name="heros" style="cursor:pointer" value="">
+                <label for="miraculous">Lady Bug</label></li>
+                <li><input type="checkbox" name="heros" style="cursor:pointer" value="">
+                <label for=""></label></li>
+                <li class="voirplus">voir plus ...</li>
               </div>
             </fieldset>
             <fieldset>
@@ -84,18 +86,35 @@
                 <label for="Bandaï">Bandaï</label></li>
                 <li><input type="checkbox" name="marque" style="cursor:pointer" value="">
                 <label for="Mattel">Mattel</label></li>
+                <li><input type="checkbox" name="marque" style="cursor:pointer" value="">
+                <label for=""></label></li>
+                <li class="voirplus">voir plus ...</li>
               </div>
             </fieldset>
-            <ul>
-              <li><h4 class="titrefiltre">Une marque ?</h4></li>
-              <li>Lansay</li>
-              <li>Disney</li>
-              <li>Canal toys</li>
-              <li>Lego</li>
-              <li>Bandaï</li>
-              <li>Mattel</li>
-              <li></li>
-            </ul>
+            <fieldset>
+              <legend><h4>Une categorie ?</h4></legend>
+              <div>
+                <li><input type="checkbox" name="categorie" style="cursor:pointer" value="">
+                <label for="">construction</label></li>
+                <li><input type="checkbox" name="categorie" style="cursor:pointer" value="">
+                <label for="">livres</label></li>
+                <li><input type="checkbox" name="categorie" style="cursor:pointer" value="">
+                <label for="">kits création</label></li>
+                <li><input type="checkbox" name="categorie" style="cursor:pointer" value="">
+                <label for="">jouets plage</label></li>
+                <li><input type="checkbox" name="categorie" style="cursor:pointer" value="">
+                <label for="">rollers</label></li>
+                <li><input type="checkbox" name="categorie" style="cursor:pointer" value="">
+                <label for="">deguisements</label></li>
+                <li><input type="checkbox" name="categorie" style="cursor:pointer" value="">
+                <label for="">poupée</label></li>
+                <li><input type="checkbox" name="categorie" style="cursor:pointer" value="">
+                <label for="">skate</label></li>
+                <li><input type="checkbox" name="categorie" style="cursor:pointer" value="">
+                <label for=""></label></li>
+                <li class="voirplus">voir plus ...</li>
+              </div>
+            </fieldset>
         </form>
         <!-- fin de la div filtre -->
         <!-- début grille flexbox filles-->
@@ -103,121 +122,130 @@
           <div class="produit">
             <img src="../IMG/fille/barbie 39.99.jpg" alt="">
             <div class="contenuproduit">
-              <p>Barbie Dreamhorse</p>
-              <p>Mattel</p>
-              <p>Barbie et son che[...]</p>
-              <p>réf. produit: 10021540</p>
-              <p><span class="colorUnivers">109.99 €</span></p>
-              <p><span class="colorUnivers">EN STOCK</span></p>
+              <p class="nomproduit">Barbie Dreamhorse</p>
+              <p class="marque">Mattel</p>
+              <p class="descriptif">Barbie et son che[...]</p>
+              <p class="ref">réf. produit: 10021540</p>
+              <p class="prix">109.99 €</p>
+              <p class="stock">EN STOCK</p>
               <button class="ajoutpanier" onclick="panier" type="button" name="ajoutpanier">ajouter au panier</button>
             </div>
           </div>
           <div class="produit">
             <img src="../IMG/fille/bracelet 7.99.jpg" alt="">
             <div class="contenuproduit">
-              <p>Soy Luna - bracelets</p>
-              <p>Lansay</p>
-              <p>créer les bracelets de[...]</p>
-              <p>réf. produit: 04105492</p>
-              <p><span class="colorUnivers">7.99</span></p>
-              <p><span class="rupture">épuisé</span></p>
-              <button class="ajoutpanier" onclick="panier" type="button" name="ajoutpanier">ajouter au panier</button>
+              <p class="nomproduit">Soy Luna - bracelets</p>
+              <p class="marque">Lansay</p>
+              <p class="descriptif">créer les bracelets[...]</p>
+              <p class="ref">réf. produit: 04105492</p>
+              <p class="prix">7.99 €</p>
+              <p class="epuise">épuisé</p>
+              <button class="ajoutpanier" onclick="panier" type="button" name="ajoutpanier">je commmande !</button>
             </div>
           </div>
           <div class="produit">
             <img src="../IMG/fille/campingCar 84.99.jpg" alt="">
             <div class="contenuproduit">
-              <p>Nom produit</p>
-              <p>marquee</p>
-              <p>descriptif[...]</p>
-              <p>réf. produit: ...</p>
-              <p><span class="colorUnivers">prix</span></p>
-              <p><span class="colorUnivers">EN STOCK</span></p>
+              <p class="nomproduit">Camping-car barbie</p>
+              <p class="marque">Mattel</p>
+              <p class="descriptif">transformable par s[...]</p>
+              <p class="ref">réf. produit: 10082081</p>
+              <p class="prix">84.99 €</p>
+              <p class="stock">EN STOCK</p>
               <button class="ajoutpanier" onclick="panier" type="button" name="ajoutpanier">ajouter au panier</button>
             </div>
           </div>
             <div class="produit">
               <img src="../IMG/fille/danse 24.99.jpg" alt="">
               <div class="contenuproduit">
-                <p>Nom produit</p>
-                <p>marquee</p>
-                <p>descriptif[...]</p>
-                <p>réf. produit: ...</p>
-                <p><span class="colorUnivers">prix</span></p>
-                <p><span class="colorUnivers">EN STOCK</span></p>
-                <button class="ajoutpanier" onclick="panier" type="button" name="ajoutpanier">ajouter au panier</button>
+                <p class="nomproduit">Danse avec les stars</p>
+                <p class="marque">Canal toys</p>
+                <p class="descriptif">Prepare toi a bri[...]</p>
+                <p class="ref">réf. produit: 36040118</p>
+                <p class="prix">24.99 €</p>
+                <p class="stock">EN STOCK</p>
+                <button class="ajoutpanier" onclick="panier" type="button" name="ajoutpanier">je commmande !</button>
               </div>
             </div>
             <div class="produit">
               <img src="../IMG/fille/lego 4.99.jpg" alt="">
               <div class="contenuproduit">
-                <p>Nom produit</p>
-                <p>marquee</p>
-                <p>descriptif[...]</p>
-                <p>réf. produit: ...</p>
-                <p><span class="colorUnivers">prix</span></p>
-                <p><span class="colorUnivers">EN STOCK</span></p>
-                <button class="ajoutpanier" onclick="panier" type="button" name="ajoutpanier">ajouter au panier</button>
+                <p class="nomproduit">toilettage des chiots</p>
+                <p class="marque">Lego</p>
+                <p class="descriptif">Prepare toi a bri[...]</p>
+                <p class="ref">réf. produit: 04045783</p>
+                <p class="prix">4.99 €</p>
+                <p class="stock">EN STOCK</p>
+                <button class="ajoutpanier" onclick="panier" type="button" name="ajoutpanier">je commmande !</button>
               </div>
             </div>
             <div class="produit">
               <img src="../IMG/fille/lego 39.99.jpg" alt="">
               <div class="contenuproduit">
-                <p>Nom produit</p>
-                <p>marquee</p>
-                <p>descriptif[...]</p>
-                <p>réf. produit: ...</p>
-                <p><span class="colorUnivers">prix</span></p>
-                <p><span class="colorUnivers">EN STOCK</span></p>
-                <button class="ajoutpanier" onclick="panier" type="button" name="ajoutpanier">ajouter au panier</button>
+                <p class="nomproduit">Voyage vaiana</p>
+                <p class="marque">Lego</p>
+                <p class="descriptif">Decouvre le mo[...]</p>
+                <p class="ref">réf. produit: 04045780</p>
+                <p class="prix">39.99 €</p>
+                <p class="stock">EN STOCK</p>
+                <button class="ajoutpanier" onclick="panier" type="button" name="ajoutpanier">je commmande !</button>
               </div>
             </div>
               <div class="produit">
                 <img src="../IMG/fille/miraculous 19.99.jpg" alt="">
                 <div class="contenuproduit">
-                  <p>Miraculous</p>
-                  <p>Bandaï</p>
-                  <p>LadyBug sur son[...]</p>
-                  <p>reference: 10021386</p>
-                  <p><span class="colorUnivers">19.99€</span></p>
-                  <p><span class="colorUnivers">EN STOCK</span></p>
-                  <button class="ajoutpanier" onclick="panier" type="button" name="ajoutpanier">ajouter au panier</button>
+                  <p class="nomproduit">Miraculous</p>
+                  <p class="marque">Bandaï</p>
+                  <p class="descriptif">Lady Bug et so[...]</p>
+                  <p class="ref">réf. produit: 10021386</p>
+                  <p class="prix">19.99 €</p>
+                  <p class="stock">EN STOCK</p>
+                  <button class="ajoutpanier" onclick="panier" type="button" name="ajoutpanier">je commmande !</button>
                 </div>
               </div>
               <div class="produit">
                 <img src="../IMG/fille/roller 74.99.jpg" alt="">
                 <div class="contenuproduit">
-                  <p>Nom produit</p>
-                  <p>marquee</p>
-                  <p>descriptif[...]</p>
-                  <p>réf. produit: ...</p>
-                  <p><span class="colorUnivers">prix</span></p>
-                  <p><span class="colorUnivers">EN STOCK</span></p>
-                  <button class="ajoutpanier" onclick="panier" type="button" name="ajoutpanier">ajouter au panier</button>
+                  <p class="nomproduit">Patin a roulettes</p>
+                  <p class="marque">Giochi</p>
+                  <p class="descriptif">Entraîne-toi a[...]</p>
+                  <p class="ref">réf. produit: 22042277</p>
+                  <p class="prix">19.99 €</p>
+                  <p class="stock">EN STOCK</p>
+                  <button class="ajoutpanier" onclick="panier" type="button" name="ajoutpanier">je commmande !</button>
                 </div>
               </div>
               <div class="produit">
                 <img src="../IMG/fille/superGirl 24.99.jpg" alt="">
                 <div class="contenuproduit">
-                  <p>Poupée superGirl</p>
-                  <p>Mattel</p>
-                  <p>Superpuissante et inv[...]</p>
-                  <p>reference: 10021386</p>
-                  <p><span class="colorUnivers">24.99€</span></p>
-                  <p><span class="colorUnivers">EN STOCK</span></p>
-                  <button class="ajoutpanier" onclick="panier" type="button" name="ajoutpanier">ajouter au panier</button>
+                  <p class="nomproduit">Poupée superGirl</p>
+                  <p class="marque">Mattel</p>
+                  <p class="descriptif">Superpuissante et inv[...]</p>
+                  <p class="ref">réf. produit: 10021386</p>
+                  <p class="prix">24.99 €</p>
+                  <p class="stock">EN STOCK</p>
+                  <button class="ajoutpanier" onclick="panier" type="button" name="ajoutpanier">je commmande !</button>
                 </div>
           </div>
         </div>
         <!-- fin grille flexbox fille -->
-      </div>
-
+      </section>
+      <!-- fin section page univers -->
     <!-- début section footer -->
     <footer>
-      <div class="reseaux">
+      <div class="newsletter">
+        <p>Inscrivez-vous à la Newsletter Gifti !</p>
+        <input placeholder="saisissez votre adresse mail" name=""></input>
+        <button type="button" name="button"><i class="far fa-envelope"></i></button>
+        <p>retrouvez nous sur les reseaux sociaux !</p>
         <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
         <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
         <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
+      </div>
+      <div class="mention">
+        <p>&copy;2018 Simplon-Willy Sebastien Leslie - <a class="" href="PAGE/mention-legale.html">mentions légales</a> -
+        <a class="" href="PAGE/condition-vente.html">Conditions générales de vente</a> -
+        <a class="" href=""></a></p>
       </div>
     </footer>
     <!-- fin section footer -->
