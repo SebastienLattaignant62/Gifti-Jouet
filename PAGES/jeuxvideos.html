@@ -21,6 +21,7 @@
       </section>
       <!-- début barre de navigation -->
       <nav>
+        <a id="acceuil" href="../index.html"><i class="fas fa-home fa-3x"></i></a>
         <ul>
           <li class="liennav"><a class="decolien" href="moinsde5ans.html">Moins de 5 ans</a></li>
           <li class="liennav"><a class="decolien" href="filles.html">Filles</a></li>
@@ -33,19 +34,225 @@
       </nav>
     <!-- fin de la barre de navigation -->
     </header>
-    <!-- début section jeuxvideos-->
-
-    <!-- fin section jeuxvideos -->
-    <!-- début section contact -->
-    <section id="contact">
-    </section>
-    <!-- fin section contact -->
+    <!-- debut section page univers -->
+      <section id="univers">
+        <div id="titrefille">
+        <h1>univers des JEUX VIDEO</h1>
+        </div>
+        <!-- debut de la div filtre -->
+        <form id="filtre">
+          <h3>Filtrez votre selection ici:</h3>
+            <fieldset>
+              <legend><h4>Votre budget ?</h4></legend>
+              <div>
+                <li><input type="checkbox" name="budget" style="cursor:pointer" value="">
+                <label for="budget">Moins de 20€</label></li>
+                <li><input type="checkbox" name="budget" style="cursor:pointer" value="">
+                <label for="budget">De 20 à 40€</label></li>
+                <li><input type="checkbox" name="budget" style="cursor:pointer" value="">
+                <label for="budget">De 40 à 60€</label></li>
+                <li><input type="checkbox" name="budget" style="cursor:pointer" value="">
+                <label for="budget">De 60 à 80€</label></li>
+                <li><input type="checkbox" name="budget" style="cursor:pointer" value="">
+                <label for="budget">Plus de 80€</label></li>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend><h4>Ses Héros / Héroïnes ?</h4></legend>
+              <div>
+                <li><input type="checkbox" name="heros" style="cursor:pointer" value="">
+                <label for="Barbie">Barbie</label></li>
+                <li><input type="checkbox" name="heros" style="cursor:pointer" value="">
+                <label for="vaiana">Vaiana</label></li>
+                <li><input type="checkbox" name="heros" style="cursor:pointer" value="">
+                <label for="Super Girl">Super Girl</label></li>
+                <li><input type="checkbox" name="heros" style="cursor:pointer" value="">
+                <label for="miraculous">Lady Bug</label></li>
+                <li><input type="checkbox" name="heros" style="cursor:pointer" value="">
+                <label for=""></label></li>
+                <li class="voirplus">voir plus ...</li>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend><h4>Une marque ?</h4></legend>
+              <div>
+                <li><input type="checkbox" name="marque" style="cursor:pointer" value="">
+                <label for="Lancay">Lansay</label></li>
+                <li><input type="checkbox" name="marque" style="cursor:pointer" value="">
+                <label for="Disney">Disney</label></li>
+                <li><input type="checkbox" name="marque" style="cursor:pointer" value="">
+                <label for="Canal toys">Canal toys</label></li>
+                <li><input type="checkbox" name="marque" style="cursor:pointer" value="">
+                <label for="Lego">Lego</label></li>
+                <li><input type="checkbox" name="marque" style="cursor:pointer" value="">
+                <label for="Bandaï">Bandaï</label></li>
+                <li><input type="checkbox" name="marque" style="cursor:pointer" value="">
+                <label for="Mattel">Mattel</label></li>
+                <li><input type="checkbox" name="marque" style="cursor:pointer" value="">
+                <label for=""></label></li>
+                <li class="voirplus">voir plus ...</li>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend><h4>Une categorie ?</h4></legend>
+              <div>
+                <li><input type="checkbox" name="categorie" style="cursor:pointer" value="">
+                <label for="">construction</label></li>
+                <li><input type="checkbox" name="categorie" style="cursor:pointer" value="">
+                <label for="">livres</label></li>
+                <li><input type="checkbox" name="categorie" style="cursor:pointer" value="">
+                <label for="">kits création</label></li>
+                <li><input type="checkbox" name="categorie" style="cursor:pointer" value="">
+                <label for="">jouets plage</label></li>
+                <li><input type="checkbox" name="categorie" style="cursor:pointer" value="">
+                <label for="">rollers</label></li>
+                <li><input type="checkbox" name="categorie" style="cursor:pointer" value="">
+                <label for="">deguisements</label></li>
+                <li><input type="checkbox" name="categorie" style="cursor:pointer" value="">
+                <label for="">poupée</label></li>
+                <li><input type="checkbox" name="categorie" style="cursor:pointer" value="">
+                <label for="">skate</label></li>
+                <li><input type="checkbox" name="categorie" style="cursor:pointer" value="">
+                <label for=""></label></li>
+                <li class="voirplus">voir plus ...</li>
+              </div>
+            </fieldset>
+        </form>
+        <!-- fin de la div filtre -->
+        <!-- début grille flexbox filles-->
+        <div id= "flexboxproduit">
+          <div class="produit">
+            <img src="../IMG/jeuxvideo/4D 39.99.jpg" alt="">
+            <div class="contenuproduit">
+              <p class="nomproduit">4D space exploration</p>
+              <p class="marque">Work</p>
+              <p class="descriptif">Explore l'unive[...]</p>
+              <p class="ref">réf. produit: 10021541</p>
+              <p class="prix">39.99 €</p>
+              <p class="stock">EN STOCK</p>
+              <button class="ajoutpanier" onclick="panier" type="button" name="ajoutpanier">ajouter au panier</button>
+            </div>
+          </div>
+          <div class="produit">
+            <img src="../IMG/jeuxvideo/assassinscreed.jpg" alt="">
+            <div class="contenuproduit">
+              <p class="nomproduit">Assassin's Creed</p>
+              <p class="marque">PS4</p>
+              <p class="descriptif">reservé +de 18ans[...]</p>
+              <p class="ref">réf. produit: 04105497</p>
+              <p class="prix">37.99 €</p>
+              <p class="epuise">épuisé</p>
+              <button class="ajoutpanier" onclick="panier" type="button" name="ajoutpanier">je commmande !</button>
+            </div>
+          </div>
+          <div class="produit">
+            <img src="../IMG/jeuxvideo/fifa.jpg" alt="">
+            <div class="contenuproduit">
+              <p class="nomproduit">fifa 18</p>
+              <p class="marque">PS4</p>
+              <p class="descriptif">plongez dans l'uni[...]</p>
+              <p class="ref">réf. produit: 10082086</p>
+              <p class="prix">64.99 €</p>
+              <p class="stock">EN STOCK</p>
+              <button class="ajoutpanier" onclick="panier" type="button" name="ajoutpanier">ajouter au panier</button>
+            </div>
+          </div>
+            <div class="produit">
+              <img src="../IMG/jeuxvideo/kidisecret.jpg" alt="">
+              <div class="contenuproduit">
+                <p class="nomproduit">Kidi Secrets</p>
+                <p class="marque">Vtech</p>
+                <p class="descriptif">Ecrit ton livre se[...]</p>
+                <p class="ref">réf. produit: 36040117</p>
+                <p class="prix">44.99 €</p>
+                <p class="stock">EN STOCK</p>
+                <button class="ajoutpanier" onclick="panier" type="button" name="ajoutpanier">je commmande !</button>
+              </div>
+            </div>
+            <div class="produit">
+              <img src="../IMG/jeuxvideo/kidizoom.jpeg" alt="">
+              <div class="contenuproduit">
+                <p class="nomproduit">montre Kidizoom</p>
+                <p class="marque">Vtech</p>
+                <p class="descriptif">montre interactive[...]</p>
+                <p class="ref">réf. produit: 04045783</p>
+                <p class="prix">54.99 €</p>
+                <p class="stock">EN STOCK</p>
+                <button class="ajoutpanier" onclick="panier" type="button" name="ajoutpanier">je commmande !</button>
+              </div>
+            </div>
+            <div class="produit">
+              <img src="../IMG/jeuxvideo/marioKart 33.99.jpeg" alt="">
+              <div class="contenuproduit">
+                <p class="nomproduit">Mario Kart 7</p>
+                <p class="marque">Nitendo 3DS</p>
+                <p class="descriptif">Joue en équipe au[...]</p>
+                <p class="ref">réf. produit: 04045780</p>
+                <p class="prix">33.99 €</p>
+                <p class="stock">EN STOCK</p>
+                <button class="ajoutpanier" onclick="panier" type="button" name="ajoutpanier">je commmande !</button>
+              </div>
+            </div>
+              <div class="produit">
+                <img src="../IMG/jeuxvideo/tabletteStorio.jpg" alt="">
+                <div class="contenuproduit">
+                  <p class="nomproduit">Tablette Storio</p>
+                  <p class="marque">Vtech</p>
+                  <p class="descriptif">Tablette tactile p[...]</p>
+                  <p class="ref">réf. produit: 10021389</p>
+                  <p class="prix">89.99 €</p>
+                  <p class="stock">EN STOCK</p>
+                  <button class="ajoutpanier" onclick="panier" type="button" name="ajoutpanier">je commmande !</button>
+                </div>
+              </div>
+              <div class="produit">
+                <img src="../IMG/jeuxvideo/trollstorio 24.jpg" alt="">
+                <div class="contenuproduit">
+                  <p class="nomproduit">Trolls storio</p>
+                  <p class="marque">Vtech</p>
+                  <p class="descriptif">apprentissage 3-6 ans[...]</p>
+                  <p class="ref">réf. produit: 22042276</p>
+                  <p class="prix">24.99 €</p>
+                  <p class="stock">EN STOCK</p>
+                  <button class="ajoutpanier" onclick="panier" type="button" name="ajoutpanier">je commmande !</button>
+                </div>
+              </div>
+              <div class="produit">
+                <img src="../IMG/jeuxvideo/zoo.jpg" alt="">
+                <div class="contenuproduit">
+                  <p class="nomproduit">Zoo Tycoon</p>
+                  <p class="marque">XboxOne</p>
+                  <p class="descriptif">jeux d'annimation zoo[...]</p>
+                  <p class="ref">réf. produit: 10021370</p>
+                  <p class="prix">24.99 €</p>
+                  <p class="stock">EN STOCK</p>
+                  <button class="ajoutpanier" onclick="panier" type="button" name="ajoutpanier">je commmande !</button>
+                </div>
+          </div>
+        </div>
+        <!-- fin grille flexbox fille -->
+      </section>
+      <!-- fin section page univers -->
     <!-- début section footer -->
     <footer>
-      <div class="reseaux">
+      <div class="fidel">
+        <img class="fidelcarte" src="../IMG/logo/carte2.png" alt="">
+        <img class="fidelpuzzle" src="../IMG/logo/puzzle.png" alt="">
+        <p>NOUVEAUTE ! decouvrez ...</p>
+      </div>
+      <div class="newsletter">
+        <p>Inscrivez-vous à la Newsletter Gifti !</p>
+        <input placeholder="saisissez votre adresse mail" name=""></input>
+        <button type="button" name="button"><i class="far fa-envelope"></i></button>
+        <p>retrouvez nous sur les reseaux sociaux !</p>
         <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
         <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
         <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
+      </div>
+      <div class="mention">
+        <p>&copy;2018 Simplon-Willy Sebastien Leslie - <a class="" href="PAGE/mention-legale.html">mentions légales</a> -
+        <a class="" href="PAGE/condition-vente.html">Conditions générales de vente</a> -
+        <a class="" href=""></a></p>
       </div>
     </footer>
     <!-- fin section footer -->
