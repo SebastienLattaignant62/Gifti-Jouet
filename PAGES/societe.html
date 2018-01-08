@@ -21,6 +21,7 @@
       </section>
       <!-- début barre de navigation -->
       <nav>
+        <a id="acceuil" href="../index.html"><i class="fas fa-home fa-3x"></i></a>
         <ul>
           <li class="liennav"><a class="decolien" href="moinsde5ans.html">Moins de 5 ans</a></li>
           <li class="liennav"><a class="decolien" href="filles.html">Filles</a></li>
@@ -33,19 +34,223 @@
       </nav>
     <!-- fin de la barre de navigation -->
     </header>
-    <!-- début section societe-->
-
-    <!-- fin section societe-->
-    <!-- début section contact -->
-    <section id="contact">
-    </section>
-    <!-- fin section contact -->
+    <!-- debut section page univers -->
+      <section id="univers">
+        <h1>univers des jeux de société</h1>
+        <!-- debut de la div filtre -->
+        <form id="filtre">
+          <h3>Filtrez votre selection ici:</h3>
+            <fieldset>
+              <legend><h4>Votre budget ?</h4></legend>
+              <div>
+                <li><input type="checkbox" name="budget" style="cursor:pointer" value="">
+                <label for="budget">Moins de 20€</label></li>
+                <li><input type="checkbox" name="budget" style="cursor:pointer" value="">
+                <label for="budget">De 20 à 40€</label></li>
+                <li><input type="checkbox" name="budget" style="cursor:pointer" value="">
+                <label for="budget">De 40 à 60€</label></li>
+                <li><input type="checkbox" name="budget" style="cursor:pointer" value="">
+                <label for="budget">De 60 à 80€</label></li>
+                <li><input type="checkbox" name="budget" style="cursor:pointer" value="">
+                <label for="budget">Plus de 80€</label></li>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend><h4>Ses Héros / Héroïnes ?</h4></legend>
+              <div>
+                <li><input type="checkbox" name="heros" style="cursor:pointer" value="">
+                <label for="Barbie">Barbie</label></li>
+                <li><input type="checkbox" name="heros" style="cursor:pointer" value="">
+                <label for="vaiana">Vaiana</label></li>
+                <li><input type="checkbox" name="heros" style="cursor:pointer" value="">
+                <label for="Super Girl">Super Girl</label></li>
+                <li><input type="checkbox" name="heros" style="cursor:pointer" value="">
+                <label for="miraculous">Lady Bug</label></li>
+                <li><input type="checkbox" name="heros" style="cursor:pointer" value="">
+                <label for=""></label></li>
+                <li class="voirplus">voir plus ...</li>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend><h4>Une marque ?</h4></legend>
+              <div>
+                <li><input type="checkbox" name="marque" style="cursor:pointer" value="">
+                <label for="Lancay">Lansay</label></li>
+                <li><input type="checkbox" name="marque" style="cursor:pointer" value="">
+                <label for="Disney">Disney</label></li>
+                <li><input type="checkbox" name="marque" style="cursor:pointer" value="">
+                <label for="Canal toys">Canal toys</label></li>
+                <li><input type="checkbox" name="marque" style="cursor:pointer" value="">
+                <label for="Lego">Lego</label></li>
+                <li><input type="checkbox" name="marque" style="cursor:pointer" value="">
+                <label for="Bandaï">Bandaï</label></li>
+                <li><input type="checkbox" name="marque" style="cursor:pointer" value="">
+                <label for="Mattel">Mattel</label></li>
+                <li><input type="checkbox" name="marque" style="cursor:pointer" value="">
+                <label for=""></label></li>
+                <li class="voirplus">voir plus ...</li>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend><h4>Une categorie ?</h4></legend>
+              <div>
+                <li><input type="checkbox" name="categorie" style="cursor:pointer" value="">
+                <label for="">construction</label></li>
+                <li><input type="checkbox" name="categorie" style="cursor:pointer" value="">
+                <label for="">livres</label></li>
+                <li><input type="checkbox" name="categorie" style="cursor:pointer" value="">
+                <label for="">kits création</label></li>
+                <li><input type="checkbox" name="categorie" style="cursor:pointer" value="">
+                <label for="">jouets plage</label></li>
+                <li><input type="checkbox" name="categorie" style="cursor:pointer" value="">
+                <label for="">rollers</label></li>
+                <li><input type="checkbox" name="categorie" style="cursor:pointer" value="">
+                <label for="">deguisements</label></li>
+                <li><input type="checkbox" name="categorie" style="cursor:pointer" value="">
+                <label for="">poupée</label></li>
+                <li><input type="checkbox" name="categorie" style="cursor:pointer" value="">
+                <label for="">skate</label></li>
+                <li><input type="checkbox" name="categorie" style="cursor:pointer" value="">
+                <label for=""></label></li>
+                <li class="voirplus">voir plus ...</li>
+              </div>
+            </fieldset>
+        </form>
+        <!-- fin de la div filtre -->
+        <!-- début grille flexbox jeux de societe-->
+        <div id= "flexboxproduit">
+          <div class="produit">
+            <img src="../IMG/societe/bonnepaye.png" alt="">
+            <div class="contenuproduit">
+              <p class="nomproduit">La bonne paye</p>
+              <p class="marque">Hasbro gaming</p>
+              <p class="descriptif">Gère ton budget l[...]</p>
+              <p class="ref">réf. produit: 06022931</p>
+              <p class="prix">25.99 €</p>
+              <p class="stock">EN STOCK</p>
+              <button class="ajoutpanier" onclick="panier" type="button" name="ajoutpanier">ajouter au panier</button>
+            </div>
+          </div>
+          <div class="produit">
+            <img src="../IMG/societe/classic 15.99.jpg" alt="">
+            <div class="contenuproduit">
+              <p class="nomproduit">100 jeux classiques</p>
+              <p class="marque">Schmidt</p>
+              <p class="descriptif">Malette comprenant 1[...]</p>
+              <p class="ref">réf. produit: 06040945</p>
+              <p class="prix">15.99 €</p>
+              <p class="epuise">épuisé</p>
+              <button class="ajoutpanier" onclick="panier" type="button" name="ajoutpanier">je commmande !</button>
+            </div>
+          </div>
+          <div class="produit">
+            <img src="../IMG/societe/LoupGaroup.png" alt="">
+            <div class="contenuproduit">
+              <p class="nomproduit">Loup Garous</p>
+              <p class="marque">Asmodee</p>
+              <p class="descriptif">jeux de groupe[...]</p>
+              <p class="ref">réf. produit: 06040954</p>
+              <p class="prix">18.99 €</p>
+              <p class="stock">EN STOCK</p>
+              <button class="ajoutpanier" onclick="panier" type="button" name="ajoutpanier">ajouter au panier</button>
+            </div>
+          </div>
+            <div class="produit">
+              <img src="../IMG/societe/mistermind 23.99.jpg" alt="">
+              <div class="contenuproduit">
+                <p class="nomproduit">Mastermind</p>
+                <p class="marque">Hasbro gaming</p>
+                <p class="descriptif">A l'aide de billes[...]</p>
+                <p class="ref">réf. produit: 06021270</p>
+                <p class="prix">24.99 €</p>
+                <p class="stock">EN STOCK</p>
+                <button class="ajoutpanier" onclick="panier" type="button" name="ajoutpanier">je commmande !</button>
+              </div>
+            </div>
+            <div class="produit">
+              <img src="../IMG/societe/monopolyGOT 41.19.jpg" alt="">
+              <div class="contenuproduit">
+                <p class="nomproduit">Cluedo GOT</p>
+                <p class="marque">Winning moves</p>
+                <p class="descriptif">Le mystère des fam[...]</p>
+                <p class="ref">réf. produit: 06025976</p>
+                <p class="prix">41.19 €</p>
+                <p class="stock">EN STOCK</p>
+                <button class="ajoutpanier" onclick="panier" type="button" name="ajoutpanier">je commmande !</button>
+              </div>
+            </div>
+            <div class="produit">
+              <img src="../IMG/societe/poker 51.49.jpg" alt="">
+              <div class="contenuproduit">
+                <p class="nomproduit">Malette poker</p>
+                <p class="marque">Grimaud</p>
+                <p class="descriptif">Jeu de casino tr[...]</p>
+                <p class="ref">réf. produit: 06041091</p>
+                <p class="prix">51.49 €</p>
+                <p class="stock">EN STOCK</p>
+                <button class="ajoutpanier" onclick="panier" type="button" name="ajoutpanier">je commmande !</button>
+              </div>
+            </div>
+              <div class="produit">
+                <img src="../IMG/societe/puissance4 12.99.jpg" alt="">
+                <div class="contenuproduit">
+                  <p class="nomproduit">Puissance 4</p>
+                  <p class="marque">Hasbro gaming</p>
+                  <p class="descriptif">4 pions et c'est[...]</p>
+                  <p class="ref">réf. produit: 06026158</p>
+                  <p class="prix">12.99 €</p>
+                  <p class="stock">EN STOCK</p>
+                  <button class="ajoutpanier" onclick="panier" type="button" name="ajoutpanier">je commmande !</button>
+                </div>
+              </div>
+              <div class="produit">
+                <img src="../IMG/societe/triominos 20.99.jpg" alt="">
+                <div class="contenuproduit">
+                  <p class="nomproduit">Triominos</p>
+                  <p class="marque">Goliath</p>
+                  <p class="descriptif">Grand classique d[...]</p>
+                  <p class="ref">réf. produit: 06040577</p>
+                  <p class="prix">20.99 €</p>
+                  <p class="stock">EN STOCK</p>
+                  <button class="ajoutpanier" onclick="panier" type="button" name="ajoutpanier">je commmande !</button>
+                </div>
+              </div>
+              <div class="produit">
+                <img src="../IMG/societe/uno.png" alt="">
+                <div class="contenuproduit">
+                  <p class="nomproduit">Uno de luxe</p>
+                  <p class="marque">Mattel</p>
+                  <p class="descriptif">Version célèbre d[...]</p>
+                  <p class="ref">réf. produit: 06040911</p>
+                  <p class="prix">24.99 €</p>
+                  <p class="stock">EN STOCK</p>
+                  <button class="ajoutpanier" onclick="panier" type="button" name="ajoutpanier">je commmande !</button>
+                </div>
+          </div>
+        </div>
+        <!-- fin grille flexbox jeux de societe -->
+      </section>
+      <!-- fin section page univers -->
     <!-- début section footer -->
     <footer>
-      <div class="reseaux">
+      <div class="fidel">
+        <img class="fidelcarte" src="../IMG/logo/carte2.png" alt="">
+        <img class="fidelpuzzle" src="../IMG/logo/puzzle.png" alt="">
+        <p>NOUVEAUTE ! decouvrez ...</p>
+      </div>
+      <div class="newsletter">
+        <p>Inscrivez-vous à la Newsletter Gifti !</p>
+        <input placeholder="saisissez votre adresse mail" name=""></input>
+        <button type="button" name="button"><i class="far fa-envelope"></i></button>
+        <p>retrouvez nous sur les reseaux sociaux !</p>
         <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
         <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
         <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
+      </div>
+      <div class="mention">
+        <p>&copy;2018 Simplon-Willy Sebastien Leslie - <a class="" href="PAGE/mention-legale.html">mentions légales</a> -
+        <a class="" href="PAGE/condition-vente.html">Conditions générales de vente</a> -
+        <a class="" href=""></a></p>
       </div>
     </footer>
     <!-- fin section footer -->

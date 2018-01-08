@@ -3,14 +3,18 @@
  src: url("../FONTS/DK Lemon Yellow Sun.otf")
 }
 
-
+html {
+  font-family: sans-serif;
+}
 
 body {
   padding: 0;
   margin-left: 80px;
   margin-right: 80px;
-  margin-top: 50px;
-  background-color: red;
+  margin-top: 70px;
+  background-image: url(../IMG/background/puzzleDiag.jpg);
+  background-repeat: round space;
+  background-attachment:fixed;
 }
 
 /*début logo & barre de recherche*/
@@ -18,7 +22,7 @@ body {
   position: relative;
 }
 
-.logo{
+.logo {
   position: absolute;
   width: 17%;
   height: auto;
@@ -30,7 +34,7 @@ body {
   position: relative;
   margin-left: 50%;
 }
-input {
+#recherche input {
   resize: none;
   position: absolute;
   width: 300px;
@@ -38,9 +42,9 @@ input {
   padding: 10px 10px 10px;
 }
 #loupe {
-  float: right;
   position: absolute;
-  margin-left: 330px;
+  margin-left: 340px;
+  margin-top: 5px;
 }
 #loupe svg:not(:root).svg-inline--fa {
     overflow: visible;
@@ -58,10 +62,20 @@ input {
 }
 /*fin logo & barre de recherche*/
 /*début barre de navigation*/
+#acceuil {
+  position: absolute;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+#acceuil svg:not(:root).svg-inline--fa {
+  overflow: visible;
+  color: #8d8d8f;
+}
 nav {
   width: 100%;
   height: 100px;
-  background-color: #FAB426;
+  background-color: #f49e37;
+  box-shadow: 0px 10px 15px black;
 }
 nav ul {
   list-style: none;
@@ -76,9 +90,11 @@ nav li {
   font-size: 24px;
   font-family: DKSun;
   padding: 10px;
+  margin: 4px;
 }
 a.decolien {
   text-decoration: none;
+  color: black;
 }
 /*fin de la barre de navigation*/
 
@@ -91,14 +107,225 @@ a.decolien {
 /*fin section contact*/
 /*début section footer*/
 footer {
-  border: 1px solid black;
-  width: 100%;
-  height: 50px;
+  width:1130px;
+  height: 200px;
+  clear: both;
 }
+.fidel {
+  width: auto;
+  height: 450px;
+  border: 1px solid #f49e37;
+  background-color: #f49e37;
+  box-shadow: 0px 10px 15px black;
+  font-family: DKSun;
+}
+.fidelcarte {
+  width: 500px;
+  height: auto;
+  margin-left: 25%;
+  margin-top: 40px;
+  box-shadow: 0px 10px 15px black;
+  border-radius: 10px;
+  position: absolute;
+}
+.fidelpuzzle {
+  width: 150px;
+  height: 150px;
+  float: left;
+  position: absolute;
+  margin-top: 50px;
+}
+.newsletter {
+  border: 1px solid #8d8d8f;
+  background-color: #8d8d8f;
+  width: auto;
+  height: 150px;
+  box-shadow: 0px 10px 15px black;
+  font-family: DKSun;
+}
+.newsletter button svg:not(:root).svg-inline--fa {
+  overflow: visible;
+  color: #EE8844;
+}
+.mention {
+  border: 1px solid white;
+  width: 1130px;
+  height: 50px;
+  background-color: white;
+  box-shadow: 0px 10px 15px black;
+  margin-bottom: 70px;
+}
+
  /*couleur icone reseaux: */
 footer svg:not(:root).svg-inline--fa {
     overflow: visible;
-    color: #EE8844;
+    color: #f49e37;
 }
 
 /*fin section footer*/
+
+/**************** PAGE JEUX DE SOCIETE *******************/
+
+#univers {
+  width:1129px;
+  height: 1850px;
+  background-color: white;
+  border: 1px solid white;
+  box-shadow: 0px 15px 15px black;
+
+}
+h1 {
+  font-family: DKSun;
+  font-size: 45px;
+  font-weight: bold;
+  color: #1F961F;           /***changement page couleur FONCE***/
+  text-align: center;
+  text-shadow: 2px 3px 2px grey;
+  text-transform: uppercase;
+  cursor: default;
+  margin-top: 50px;
+}
+/*debut filtre*/
+#filtre {
+  width: 25%;
+  height: auto;
+  /*float: left;*/
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 40px;
+  background-color: #9CF19C;  /***changement page couleur CLAIR***/
+  box-shadow: 2px 5px 5px grey;
+  border-radius: 10px;
+}
+#filtre h3 {
+  font-family: DKSun;
+  font-size: 25px;
+  text-align: center;
+  background-color: #1F961F;/***changement page couleur FONCE***/
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  cursor: default;
+}
+fieldset{
+  border-radius: 10px;
+  border-color: #1F961F; /***changement page couleur FONCE***/
+  margin-bottom: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#filtre h4 {
+  color: #1F961F;  /***changement page couleur FONCE***/
+  font-weight: bold;
+  cursor: default;
+}
+#filtre div {
+  margin-left: 60px;
+  list-style: none;
+}
+#filtre li:hover {
+  color: #1F961F; /***changement page couleur FONCE***/
+  text-decoration: underline;
+  list-style: none;
+  cursor: pointer;
+}
+#filtre input {
+  width: auto;
+}
+
+#filtre label {
+  padding-left: 10px;
+}
+.voirplus {
+  text-decoration: underline;
+  margin-left: 40px;
+}
+
+/*debut grille flexbox */
+#flexboxproduit {
+  width: 70%;
+  height: 100% auto;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  background-color: white;
+  float: right;
+}
+/*debut produit : img+contenu*/
+.produit {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+.produit img {
+  width: 200px;
+  height: 200px;
+}
+.contenuproduit {
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+
+  text-align: center;
+  background-color: white;
+  cursor: default;
+}
+.nomproduit {
+  font-weight: bold;
+  font-size: 16px;
+}
+.marque {
+  font-size: 14px;
+}
+.descriptif {
+  font-size: 14px;
+}
+.ref{
+  font-size: 14px;
+}
+.prix {
+  color: #1F961F;/***changement page couleur FONCE***/
+  font-weight: bold;
+  font-size: 18px;
+}
+.stock {
+  color: #1F961F;/***changement page couleur FONCE***/
+  font-size: 14px;
+  font-weight: bold;
+}
+.epuise {
+  color: #f49e37;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.ajoutpanier {
+  display:block;
+  width:200px;
+  line-height:30px;
+  background-color: #9CF19C; /***changement page couleur CLAIR***/
+  text-decoration:none;
+  border-radius: 10px;
+  box-shadow: 2px 5px 5px grey;
+  font-family: DKSun;
+  font-size: 18px;
+  color: black;
+  cursor: pointer;
+
+}
+.ajoutpanier:hover {
+  background-color: #1F961F;/***changement page couleur FONCE***/
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+.ajoutpanier:active {
+  background-color: #1F961F;/***changement page couleur FONCE***/
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 3s;
+  color: white;
+}
+
+
+/******** PAGE JEUX DE SOCIETE**********/
