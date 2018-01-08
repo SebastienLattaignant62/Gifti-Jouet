@@ -193,7 +193,7 @@ h1 {
   font-weight: bold;
   color: #c4127d;           /***changement page couleur FONCE***/
   text-align: center;
-  text-shadow: 2px 3px 2px grey;
+  text-shadow: 2px 2px 1px grey; /**********modif**************************************************/
   text-transform: uppercase;
   cursor: default;
   margin: auto;
@@ -206,8 +206,9 @@ h1 {
   position: absolute;
   margin-left: 20px;
   margin-top: 40px;
-  background-color: #f49cf1;  /***changement page couleur CLAIR***/
-  box-shadow: 2px 5px 5px grey;
+  /*background-color: #f49cf1;  /***changement page couleur CLAIR***/
+  background-image: linear-gradient(#DDDDE0, #B5B5B8);  /**********modif**************************************************/
+  box-shadow: 2px 2px 1px grey; /**********modif**************************************************/
   border-radius: 10px;
 }
 #filtre h3 {
@@ -263,12 +264,14 @@ fieldset{
   flex-wrap: wrap;
   justify-content:space-around;
   background-color: white;
-  margin-left: 430px;
+  margin-left: 400px;
 }
 /*debut produit : img+contenu*/
 .produit {
   margin-top: 40px;
   margin-bottom: 60px;
+  margin-right: 20px;
+  margin-left: 0;
 }
 .produit img {
   width: 200px;
@@ -289,12 +292,15 @@ fieldset{
 }
 .marque {
   font-size: 14px;
+  margin-bottom: 5px; /**********modif**************************************************/
 }
 .descriptif {
   font-size: 14px;
+  margin: 0 0; /**********modif**************************************************/
 }
 .ref{
   font-size: 14px;
+  margin-top: 5px; /**********modif**************************************************/
 }
 .prix {
   color: #c4127d;/***changement page couleur FONCE***/
@@ -314,16 +320,17 @@ fieldset{
 
 .ajoutpanier {
   display:block;
-  width:200px;
+  width:170px; /**********modif**************************************************/
   line-height:30px;
   background-color: #f49cf1; /***changement page couleur CLAIR***/
   text-decoration:none;
   border-radius: 10px;
-  box-shadow: 2px 5px 5px grey;
+  box-shadow: 2px 2px 1px grey; /**********modif**************************************************/
   font-family: DKSun;
-  font-size: 18px;
+  font-size: 16px; /**********modif**************************************************/
   color: black;
   cursor: pointer;
+  margin-left: 10px; /**********modif**************************************************/
 
 }
 .ajoutpanier:hover {
