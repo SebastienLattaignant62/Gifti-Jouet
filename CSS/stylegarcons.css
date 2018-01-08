@@ -167,12 +167,16 @@ footer svg:not(:root).svg-inline--fa {
 /**************** PAGE GARCON *******************/
 
 #univers {
-  width:1129px;
+  width:100%;
   height: 1850px;
   background-color: white;
-  border: 1px solid white;
   box-shadow: 0px 15px 15px black;
-
+}
+#titregarcon {
+  margin: auto;
+  width: 500px;
+  height: 70px;
+  padding-top: 50px;
 }
 h1 {
   font-family: DKSun;
@@ -183,7 +187,6 @@ h1 {
   text-shadow: 2px 3px 2px grey;
   text-transform: uppercase;
   cursor: default;
-  margin-top: 50px;
 }
 /*debut filtre*/
 #filtre {
@@ -243,14 +246,14 @@ fieldset{
 
 /*debut grille flexbox */
 #flexboxproduit {
-  width: 70%;
+  width: 60%;
   height: 100% auto;
   display: flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   justify-content:space-around;
   background-color: white;
-  float: right;
+  margin-left: 430px;
 }
 /*debut produit : img+contenu*/
 .produit {
