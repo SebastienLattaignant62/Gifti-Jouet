@@ -107,17 +107,19 @@ a.decolien {
 /*fin section contact*/
 /*début section footer*/
 footer {
-  width:1130px;
+  width:100%;
   height: 200px;
   clear: both;
 }
 .fidel {
-  width: auto;
+  width: 100%;
   height: 450px;
-  border: 1px solid #f49e37;
   background-color: #f49e37;
   box-shadow: 0px 10px 15px black;
   font-family: DKSun;
+}
+.fidel p {
+  margin: auto;
 }
 .fidelcarte {
   width: 500px;
@@ -136,9 +138,8 @@ footer {
   margin-top: 50px;
 }
 .newsletter {
-  border: 1px solid #8d8d8f;
   background-color: #8d8d8f;
-  width: auto;
+  width: 100%;
   height: 150px;
   box-shadow: 0px 10px 15px black;
   font-family: DKSun;
@@ -148,12 +149,18 @@ footer {
   color: #EE8844;
 }
 .mention {
-  border: 1px solid white;
-  width: 1130px;
+  width: 100%;
   height: 50px;
   background-color: white;
   box-shadow: 0px 10px 15px black;
   margin-bottom: 70px;
+}
+.newsletter p {
+  margin: auto;
+}
+
+.mention p {
+  margin: auto;
 }
 
  /*couleur icone reseaux: */
@@ -167,11 +174,12 @@ footer svg:not(:root).svg-inline--fa {
 /**************** PAGE FILLE *******************/
 
 #univers {
-  width:1129px;
+  width:100%;
   height: 1850px;
   background-color: white;
-  border: 1px solid white;
   box-shadow: 0px 15px 15px black;
+  margin: auto;
+  padding-top: 50px;
 
 }
 h1 {
@@ -183,7 +191,7 @@ h1 {
   text-shadow: 2px 3px 2px grey;
   text-transform: uppercase;
   cursor: default;
-  margin-top: 50px;
+  margin: auto;
 }
 /*debut filtre*/
 #filtre {
@@ -243,14 +251,14 @@ fieldset{
 
 /*debut grille flexbox */
 #flexboxproduit {
-  width: 70%;
+  width: 60%;
   height: 100% auto;
   display: flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   justify-content:space-around;
   background-color: white;
-  float: right;
+  margin-left: 430px;
 }
 /*debut produit : img+contenu*/
 .produit {
