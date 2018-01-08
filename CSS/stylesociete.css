@@ -73,9 +73,12 @@ body {
 }
 nav {
   width: 100%;
-  height: 100px;
-  background-color: #f49e37;
-  box-shadow: 0px 10px 15px black;
+  height: 80px;
+  /*background-color: #f49e37;*/
+  background-image: linear-gradient(#F49E37, #F1E17F);
+  box-shadow: 2px 2px 1px grey;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 nav ul {
   list-style: none;
@@ -87,7 +90,7 @@ nav li {
   display: inline;
   text-transform: capitalize;
   text-shadow: 1px 1px 1px black;
-  font-size: 24px;
+  font-size: 22px;
   font-family: DKSun;
   padding: 10px;
   margin: 4px;
@@ -106,6 +109,12 @@ a.decolien {
 }
 /*fin section contact*/
 /*début section footer*/
+.lienfooter {
+  width: 100%;
+  height: 50px;
+  box-shadow: 2px 2px 1px grey;
+  background-image: linear-gradient(white, #F1E17F);
+}
 footer {
   width:100%;
   height: 200px;
@@ -113,106 +122,122 @@ footer {
 }
 .fidel {
   width: 100%;
-  height: 450px;
-  background-color: #f49e37;
-  box-shadow: 0px 10px 15px black;
+  height: 250px;
+  background-image: linear-gradient(#F1E17F, #F49E37);
+  /*background-color: #F49E37;*/
+  box-shadow: 2px 2px 1px grey;
   font-family: DKSun;
 }
 .fidel p {
   margin: auto;
 }
 .fidelcarte {
-  width: 500px;
+  width: 250px;
   height: auto;
-  margin-left: 25%;
+  margin-left: 50%;
   margin-top: 40px;
-  box-shadow: 0px 10px 15px black;
+  box-shadow: 2px 2px 1px grey;
   border-radius: 10px;
   position: absolute;
+  /* Rotation du div */
+  transform:rotate(15deg);
+  -ms-transform:rotate(15deg); /* Internet Explorer */
+  -moz-transform:rotate(15deg); /* Firefox */
+  -webkit-transform:rotate(15deg); /* Safari et Chrome */
+  -o-transform:rotate(15deg); /* Opera */
 }
-.fidelpuzzle {
-  width: 150px;
-  height: 150px;
-  float: left;
-  position: absolute;
-  margin-top: 50px;
+
+.lienfooter2 {
+  width: 100%;
+  height: 50px;
+  box-shadow: 2px 2px 1px grey;
+  background-image: linear-gradient(#F49E37, white);
 }
-.newsletter {
-  background-color: #8d8d8f;
+#newsletter {
+  background-color: white;
   width: 100%;
   height: 150px;
-  box-shadow: 0px 10px 15px black;
+  box-shadow: 2px 2px 1px grey;
   font-family: DKSun;
 }
-.newsletter button svg:not(:root).svg-inline--fa {
+#newsletter button svg:not(:root).svg-inline--fa {
   overflow: visible;
   color: #EE8844;
 }
-.mention {
+#newsletter p {
+  margin: auto;
+}
+#reseau {
   width: 100%;
-  height: 50px;
-  background-color: white;
-  box-shadow: 0px 10px 15px black;
+  height: 150px;
+  box-shadow: 2px 2px 1px grey;
+  background-image: linear-gradient(white, #F1E17F);
+  padding-top: 1px;
+}
+/*couleur icone reseaux: */
+footer svg:not(:root).svg-inline--fa {
+   overflow: visible;
+   color: #f49e37;
+}
+#mention {
+  width: 100%;
+  height: 80px;
+  background-image: linear-gradient( #F1E17F, #F49E37);
+  box-shadow: 2px 2px 1px grey;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   margin-bottom: 70px;
 }
-.newsletter p {
+#mention p {
   margin: auto;
-}
-
-.mention p {
-  margin: auto;
-}
- /*couleur icone reseaux: */
-footer svg:not(:root).svg-inline--fa {
-    overflow: visible;
-    color: #f49e37;
 }
 
 /*fin section footer*/
 
-/**************** PAGE JEUX DE SOCIETE *******************/
+/**************** PAGE JEUX DE SOCIETE*******************/
 
 #univers {
-  width:100%
-  height: 1850px;
+  width:100%;
+  height: 1750px;
   background-color: white;
-  box-shadow: 0px 15px 15px black;
-
+  box-shadow: 2px 2px 1px grey;
 }
 #titresociete {
-  width: 500px;
+  width: 100%;
   height: 70px;
   margin: auto;
   padding-top: 50px;
+  background-image: linear-gradient(#F1E17F, white);
 }
+
 h1 {
   font-family: DKSun;
   font-size: 45px;
   font-weight: bold;
-  color: #1F961F;           /***changement page couleur FONCE***/
+  color: #1f961f;           /***changement page couleur FONCE***/
   text-align: center;
-  text-shadow: 2px 3px 2px grey;
+  text-shadow: 2px 2px 1px grey;
   text-transform: uppercase;
   cursor: default;
   margin: auto;
 }
 /*debut filtre*/
 #filtre {
-  width: 25%;
+  width: 22%;
   height: auto;
   /*float: left;*/
   position: absolute;
-  margin-left: 20px;
+  margin-left: 30px;
   margin-top: 40px;
-  background-color: #9CF19C;  /***changement page couleur CLAIR***/
-  box-shadow: 2px 5px 5px grey;
+  background-image: linear-gradient(#DDDDE0, #B5B5B8);
+  box-shadow: 2px 2px 1px grey;
   border-radius: 10px;
 }
 #filtre h3 {
   font-family: DKSun;
-  font-size: 25px;
+  font-size: 22px;
   text-align: center;
-  background-color: #1F961F;/***changement page couleur FONCE***/
+  background-color: #1f961f;/***changement page couleur FONCE***/
   color: white;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -220,22 +245,22 @@ h1 {
 }
 fieldset{
   border-radius: 10px;
-  border-color: #1F961F; /***changement page couleur FONCE***/
+  border-color: #1f961f; /***changement page couleur FONCE***/
   margin-bottom: 50px;
   margin-left: 10px;
   margin-right: 10px;
 }
 #filtre h4 {
-  color: #1F961F;  /***changement page couleur FONCE***/
+  color: #1f961f;  /***changement page couleur FONCE***/
   font-weight: bold;
   cursor: default;
 }
 #filtre div {
-  margin-left: 60px;
+  margin-left: 38px;
   list-style: none;
 }
 #filtre li:hover {
-  color: #1F961F; /***changement page couleur FONCE***/
+  color: #1f961f; /***changement page couleur FONCE***/
   text-decoration: underline;
   list-style: none;
   cursor: pointer;
@@ -261,12 +286,15 @@ fieldset{
   flex-wrap: wrap;
   justify-content:space-around;
   background-color: white;
-  margin-left: 430px;
+  margin-left: 400px;
+  border-radius: 10px;
 }
 /*debut produit : img+contenu*/
 .produit {
   margin-top: 40px;
   margin-bottom: 60px;
+  margin-right: 26px;
+  margin-left: 0;
 }
 .produit img {
   width: 200px;
@@ -287,20 +315,23 @@ fieldset{
 }
 .marque {
   font-size: 14px;
+  margin-bottom: 5px;
 }
 .descriptif {
   font-size: 14px;
+  margin: 0 0;
 }
 .ref{
   font-size: 14px;
+  margin-top: 5px;
 }
 .prix {
-  color: #1F961F;/***changement page couleur FONCE***/
+  color: #1f961f;/***changement page couleur FONCE***/
   font-weight: bold;
   font-size: 18px;
 }
 .stock {
-  color: #1F961F;/***changement page couleur FONCE***/
+  color: #1f961f;/***changement page couleur FONCE***/
   font-size: 14px;
   font-weight: bold;
 }
@@ -312,26 +343,27 @@ fieldset{
 
 .ajoutpanier {
   display:block;
-  width:200px;
+  width:170px;
   line-height:30px;
-  background-color: #9CF19C; /***changement page couleur CLAIR***/
+  background-color: #9cf19c; /***changement page couleur CLAIR***/
   text-decoration:none;
   border-radius: 10px;
-  box-shadow: 2px 5px 5px grey;
+  box-shadow: 2px 2px 1px grey;
   font-family: DKSun;
-  font-size: 18px;
+  font-size: 16px;
   color: black;
   cursor: pointer;
+  margin-left: 10px;
 
 }
 .ajoutpanier:hover {
-  background-color: #1F961F;/***changement page couleur FONCE***/
+  background-color: #1f961f;/***changement page couleur FONCE***/
   cursor: pointer;
   color: white;
   font-weight: bold;
 }
 .ajoutpanier:active {
-  background-color: #1F961F;/***changement page couleur FONCE***/
+  background-color: #1f961f;/***changement page couleur FONCE***/
   cursor: pointer;
   transition-property: background-color;
   transition-duration: 3s;
@@ -339,4 +371,4 @@ fieldset{
 }
 
 
-/******** PAGE JEUX DE SOCIETE**********/
+/*********fin PAGE JEUX DE SOCIETE***********/
