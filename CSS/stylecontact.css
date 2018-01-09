@@ -32,7 +32,7 @@ body {
   width: 364px;
   height: 50px;
   position: relative;
-  margin-left: 50%;
+  margin:auto;
 }
 #recherche input {
   resize: none;
@@ -55,6 +55,16 @@ body {
   position: absolute;
   margin-left: 1050px;
   margin-top: 25px;
+  top: -27px;
+}
+.panier p {
+  position: absolute;
+  margin-top: 16px;
+  margin-left: -59px;
+  font-family: DKSun;
+  font-weight: bold;
+  font-size: 22px;
+  text-transform: capitalize;
 }
 .panier svg:not(:root).svg-inline--fa {
     overflow: visible;
