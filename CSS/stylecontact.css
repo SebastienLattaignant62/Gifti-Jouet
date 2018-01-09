@@ -1,0 +1,310 @@
+@font-face {
+ font-family: "DKSun";
+ src: url("../FONTS/DK Lemon Yellow Sun.otf")
+}
+
+
+
+body {
+  padding: 0;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 50px;
+  background-color: white;
+}
+
+/*début logo & barre de recherche*/
+#logorecherche {
+  position: relative;
+}
+
+.logo{
+  position: absolute;
+  width: 17%;
+  height: auto;
+  margin-top: -55px;
+}
+#recherche {
+  width: 364px;
+  height: 50px;
+  position: relative;
+  margin-left: 50%;
+}
+input {
+  resize: none;
+  position: absolute;
+  width: 300px;
+  border-radius: 20px;
+  padding: 10px 10px 10px;
+}
+#loupe {
+  float: right;
+  position: absolute;
+  margin-left: 330px;
+}
+#loupe svg:not(:root).svg-inline--fa {
+    overflow: visible;
+    color: #EE8844;
+    float: right;
+}
+.panier {
+  position: absolute;
+  margin-left: 88%;
+  margin-top: -55px;
+}
+.panier svg:not(:root).svg-inline--fa {
+    overflow: visible;
+    color: #8d8d8f;
+}
+/*fin logo & barre de recherche*/
+/*début barre de navigation*/
+nav {
+  width: 100%;
+  height: 100px;
+  background-color: #FAB426;
+}
+nav ul {
+  list-style: none;
+  margin: auto;
+  text-align: center;
+  padding-top: 33px;
+}
+nav li {
+  display: inline;
+  text-transform: capitalize;
+  text-shadow: 1px 1px 1px black;
+  font-size: 24px;
+  font-family: DKSun;
+  padding: 10px;
+}
+a.decolien {
+  text-decoration: none;
+}
+/*fin de la barre de navigation*/
+/*début section contact*/
+#contactnous{
+  width: 100%;
+  height: 100%;
+}
+
+h1{
+  font-size: 40px;
+  color: grey;
+  text-align: center;
+  margin-top: 70px;
+}
+
+
+#conteneur{
+  width: 90%;
+  min-height: 100%;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.element1{
+  width: 250px;
+  height: 300px;
+
+  background-image: url('../IMG/logo/logotel.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.element2{
+  width: 250px;
+  height: 300px;
+
+  background-image: url('../IMG/logo/logomail.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.element3{
+  width: 250px;
+  height: 300px;
+
+  background-image: url('../IMG/logo/logocourrier.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+p {
+  color: grey;
+  /* margin-right: auto; */
+  font-size: 14px;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+.texttelligne {
+  width: 250px;
+  height:300px;
+  /* border: 1px solid black; */
+  margin-left: 100px;
+
+}
+
+
+.textmail {
+  width: 250px;
+  height: 300px;
+  /* border: 1px solid black; */
+
+
+}
+
+.textcourrier {
+  width: 250px;
+  height: 300px;
+  /* border: 1px solid black; */
+
+}
+
+
+.secondcontact{
+  width: 800px;
+  height: 800px;
+  /* border: 1px solid black; */
+  margin: auto;
+  position: relative;
+}
+.formulaire{
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  margin: auto;
+  background-color: grey;
+  box-shadow: 10px 10px 2px 1px rgba(0, 0, 255, .1);
+}
+
+/* debut formulaire */
+
+.premierlignenom{
+  position: absolute;
+  margin-top: 30px;
+}
+.premierlignenomdroite{
+  /* position: absolute; */
+  margin-left: 100px;
+  margin-top: 25px;
+}
+
+.premierligneprenom{
+  position: absolute;
+  margin-top: 50px;
+}
+.premierligneprenomdroite{
+  /* position: absolute; */
+  margin-left: 100px;
+  margin-top: 45px;
+}
+.hommeoufemme{
+  position: absolute;
+  margin-top: 70px;
+}
+.hommeoufemmedroite{
+  /* position: absolute; */
+  margin-left: 100px;
+  margin-top: 70px;
+}
+.hommeoufemmedroite2{
+  /* position: absolute; */
+  margin-left: 100px;
+  margin-top: 5px;
+}
+.améliorer{
+  position: absolute;
+  margin-top: 70px;
+}
+.améliorerdroite{
+  /* position: absolute; */
+  margin-left: 100px;
+  margin-top: 70px;
+}
+.letter{
+  position: absolute;
+  margin-top: 50px;
+}
+.letterdroite{
+  margin-left: 100px;
+  margin-top: 50px;
+}
+.envoi{
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 300px;
+}
+.envoidroite{
+  /* position: absolute; */
+  margin-left: 100px;
+  margin-top: 40px;
+}
+/* fin du formulaire */
+
+/*fin section contact*/
+/*début section footer*/
+footer {
+  width:100%;
+  height: 200px;
+  clear: both;
+}
+.fidel {
+  width: 100%;
+  height: 450px;
+  background-color: #f49e37;
+  box-shadow: 0px 10px 15px black;
+  font-family: DKSun;
+}
+.fidel p {
+  margin: auto;
+}
+.fidelcarte {
+  width: 500px;
+  height: auto;
+  margin-left: 25%;
+  margin-top: 40px;
+  box-shadow: 0px 10px 15px black;
+  border-radius: 10px;
+  position: absolute;
+}
+.fidelpuzzle {
+  width: 150px;
+  height: 150px;
+  float: left;
+  position: absolute;
+  margin-top: 50px;
+}
+.newsletter {
+  background-color: #8d8d8f;
+  width: 100%;
+  height: 150px;
+  box-shadow: 0px 10px 15px black;
+  font-family: DKSun;
+}
+.newsletter button svg:not(:root).svg-inline--fa {
+  overflow: visible;
+  color: #EE8844;
+}
+.mention {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  box-shadow: 0px 10px 15px black;
+  margin-bottom: 70px;
+}
+.newsletter p {
+  margin: auto;
+}
+
+.mention p {
+  margin: auto;
+}
+/*fin section footer*/
+
+
+
+
+}
