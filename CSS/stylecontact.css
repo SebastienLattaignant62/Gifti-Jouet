@@ -3,14 +3,18 @@
  src: url("../FONTS/DK Lemon Yellow Sun.otf")
 }
 
-
+html {
+  font-family: sans-serif;
+}
 
 body {
   padding: 0;
   margin-left: 80px;
   margin-right: 80px;
-  margin-top: 50px;
-  background-color: white;
+  margin-top: 70px;
+  background-image: url(../IMG/background/puzzleDiag.jpg);
+  background-repeat: round space;
+  background-attachment:fixed;
 }
 
 /*début logo & barre de recherche*/
@@ -18,7 +22,7 @@ body {
   position: relative;
 }
 
-.logo{
+.logo {
   position: absolute;
   width: 17%;
   height: auto;
@@ -30,7 +34,7 @@ body {
   position: relative;
   margin-left: 50%;
 }
-input {
+#recherche input {
   resize: none;
   position: absolute;
   width: 300px;
@@ -38,9 +42,9 @@ input {
   padding: 10px 10px 10px;
 }
 #loupe {
-  float: right;
   position: absolute;
-  margin-left: 330px;
+  margin-left: 340px;
+  margin-top: 5px;
 }
 #loupe svg:not(:root).svg-inline--fa {
     overflow: visible;
@@ -49,8 +53,8 @@ input {
 }
 .panier {
   position: absolute;
-  margin-left: 88%;
-  margin-top: -55px;
+  margin-left: 1050px;
+  margin-top: 25px;
 }
 .panier svg:not(:root).svg-inline--fa {
     overflow: visible;
@@ -58,10 +62,22 @@ input {
 }
 /*fin logo & barre de recherche*/
 /*début barre de navigation*/
+#acceuil {
+  position: absolute;
+  margin-left: 70px;
+  margin-top: 20px;
+}
+#acceuil svg:not(:root).svg-inline--fa {
+  overflow: visible;
+  color: #8d8d8f;
+}
 nav {
   width: 100%;
-  height: 100px;
-  background-color: #FAB426;
+  height: 80px;
+  background-image: linear-gradient(#F49E37, #F1E17F);
+  box-shadow: 2px 2px 1px grey;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 nav ul {
   list-style: none;
@@ -73,25 +89,41 @@ nav li {
   display: inline;
   text-transform: capitalize;
   text-shadow: 1px 1px 1px black;
-  font-size: 24px;
+  font-size: 22px;
   font-family: DKSun;
   padding: 10px;
+  margin: 4px;
 }
 a.decolien {
   text-decoration: none;
+  color: black;
 }
 /*fin de la barre de navigation*/
 /*début section contact*/
+#margetitre {
+  width: 100%;
+  height: 70px;
+  margin: auto;
+  padding-top: 50px;
+  background-image: linear-gradient(#F1E17F, white);
+}
+
 #contactnous{
   width: 100%;
   height: 100%;
+  background-color: white;
 }
 
 h1{
-  font-size: 40px;
-  color: grey;
+  font-family: DKSun;
+  font-size: 45px;
+  font-weight: bold;
+  color: grey;           /***changement page couleur FONCE***/
   text-align: center;
-  margin-top: 70px;
+  text-shadow: 2px 2px 1px grey;
+  text-transform: uppercase;
+  cursor: default;
+  margin: auto;
 }
 
 /* debut formulaire */
@@ -106,10 +138,10 @@ h1{
 .formulaire{
   width: 500px;
   height: 500px;
-  border: 1px solid black;
   margin: auto;
-  background-color: grey;
-  box-shadow: 10px 10px 2px 1px rgba(0, 0, 255, .1);
+  background-image: linear-gradient(#DDDDE0, #B5B5B8);
+  box-shadow: 2px 2px 1px grey;
+  border-radius: 10px;
 }
 
 .premierlignenom{
@@ -200,6 +232,12 @@ h1{
 
 /*fin section contact*/
 /*début section footer*/
+.lienfooter {
+  width: 100%;
+  height: 50px;
+  box-shadow: 2px 2px 1px grey;
+  background-image: linear-gradient(white, #F1E17F);
+}
 footer {
   width:100%;
   height: 200px;
@@ -207,55 +245,76 @@ footer {
 }
 .fidel {
   width: 100%;
-  height: 450px;
-  background-color: #f49e37;
-  box-shadow: 0px 10px 15px black;
+  height: 250px;
+  background-image: linear-gradient(#F1E17F, #F49E37);
+  /*background-color: #F49E37;*/
+  box-shadow: 2px 2px 1px grey;
   font-family: DKSun;
 }
 .fidel p {
   margin: auto;
 }
 .fidelcarte {
-  width: 500px;
+  width: 250px;
   height: auto;
-  margin-left: 25%;
+  margin-left: 50%;
   margin-top: 40px;
-  box-shadow: 0px 10px 15px black;
+  box-shadow: 2px 2px 1px grey;
   border-radius: 10px;
   position: absolute;
+  /* Rotation du div */
+  transform:rotate(15deg);
+  -ms-transform:rotate(15deg); /* Internet Explorer */
+  -moz-transform:rotate(15deg); /* Firefox */
+  -webkit-transform:rotate(15deg); /* Safari et Chrome */
+  -o-transform:rotate(15deg); /* Opera */
 }
-.fidelpuzzle {
-  width: 150px;
-  height: 150px;
-  float: left;
-  position: absolute;
-  margin-top: 50px;
+
+.lienfooter2 {
+  width: 100%;
+  height: 50px;
+  box-shadow: 2px 2px 1px grey;
+  background-image: linear-gradient(#F49E37, white);
 }
-.newsletter {
-  background-color: #8d8d8f;
+#newsletter {
+  background-color: white;
   width: 100%;
   height: 150px;
-  box-shadow: 0px 10px 15px black;
+  box-shadow: 2px 2px 1px grey;
   font-family: DKSun;
 }
-.newsletter button svg:not(:root).svg-inline--fa {
+#newsletter button svg:not(:root).svg-inline--fa {
   overflow: visible;
   color: #EE8844;
 }
-.mention {
+#newsletter p {
+  margin: auto;
+}
+#reseau {
   width: 100%;
-  height: 50px;
-  background-color: white;
-  box-shadow: 0px 10px 15px black;
+  height: 150px;
+  box-shadow: 2px 2px 1px grey;
+  background-image: linear-gradient(white, #F1E17F);
+  padding-top: 1px;
+}
+/*couleur icone reseaux: */
+footer svg:not(:root).svg-inline--fa {
+   overflow: visible;
+   color: #f49e37;
+}
+#mention {
+  width: 100%;
+  height: 80px;
+  background-image: linear-gradient( #F1E17F, #F49E37);
+  box-shadow: 2px 2px 1px grey;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   margin-bottom: 70px;
 }
-.newsletter p {
+#mention p {
   margin: auto;
 }
 
-.mention p {
-  margin: auto;
-}
 /*fin section footer*/
 
 
