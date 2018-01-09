@@ -12,7 +12,7 @@ body {
   margin-left: 80px;
   margin-right: 80px;
   margin-top: 70px;
-  background-image: url(../IMG/background/puzzleDiag.jpg);
+  background-color: white;
   background-repeat: round space;
   background-attachment:fixed;
 }
@@ -99,6 +99,109 @@ a.decolien {
   color: black;
 }
 /*fin de la barre de navigation*/
+/*début section jeu*/
+#sectionjeu {
+  width: 100%;
+  height: 800px;
+  border: 1px solid black;
+  background-image: url("../IMG/background/jeuxdes.jpg");
+  background-size: 100%;
+  position: relative;
+}
+.player1 {
+  background-color: rgba(0, 3, 255, 0.67);
+}
+.player2 {
+  background-color: rgba(255, 0, 0, 0.71);
+}
+#gauche {
+  width: 30%;
+  height: 330px;
+  background-color: rgba(255, 255, 255, 0.52);
+  margin: auto;
+  font-weight: bold;
+  font-family: DKSun;
+  font-size: 24px;
+  font-weight: bold;
+}
+#gauche p{
+  padding-top: 10px;
+  padding-left: 6px;
+}
+#nbordi {
+  width: 30%;
+  height: 90px;
+  margin: auto;
+  text-align: center;
+  font-family: DKSun;
+  font-size: 44px;
+  padding-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+.nbordiadd {
+  background-color:  rgba(255, 255, 255, 0.52);
+}
+#droite {
+  width: 29%;
+  height: 90px;
+  float: right;
+  display: inline-block;
+  font-family: DKSun;
+  font-size: 24px;
+  padding-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+#gauchehaut {
+  width: 29%;
+  height: 90px;
+  display: inline-block;
+  font-family: DKSun;
+  font-size: 24px;
+  position: absolute;
+  left: 0px;
+  top: 100px;
+  padding-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+#resultat {
+  width: 30%;
+  height: 90px;
+  margin: auto;
+  display: inline-block;
+  margin-left: 418px;
+  margin-top: 20px;
+  font-family: DKSun;
+  font-size: 24px;
+  padding-top: 10px;
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.resultatadd {
+  background-color: rgba(255, 255, 255, 0.52);
+  margin: auto;
+}
+#devinez {
+  text-align: justify;
+}
+#button {
+  width: 150px;
+  height: 30px;
+}
+#buttondebut {
+  width: 150px;
+  height: 50px;
+  margin-left: 6px;
+}
+#debutpartie {
+  width: 150px;
+  height: 50px;
+}
+/*fin de la section jeu*/
+
 
 /*debut section reduction*/
 #margetitre {

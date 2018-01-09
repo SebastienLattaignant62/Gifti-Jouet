@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>giftijouets</title>
     <link rel="stylesheet" href="../CSS/stylereduction.css">
+    <script type="text/javascript" src="../JS/script.js"></script>
   </head>
   <body>
     <header>
@@ -34,6 +35,27 @@
       </nav>
     <!-- fin de la barre de navigation -->
     </header>
+    <!-- début section jeu -->
+    <section id="sectionjeu">
+      <div id="nbordi">
+      </div>
+      <div id="gauchehaut">
+      </div>
+      <div id="resultat">
+      </div>
+      <div id="droite">
+      </div>
+      <div id="gauche">
+        <p>Tente ta chance et joue avec un ami</p>
+        <p>essais d'avoir le même resultat que l'ordinateur</p>
+        <p>le premier à réussir gagne un bon de réduction</p>
+        <p id="devinez">Lance le dé et bonne chance!</p>
+        <button disable="true" type="button" id="buttondebut" onclick="debutpartie()">commencer une partie</button>
+        <button disable="true" type="button" id="button" onclick="lancer()">Lance le dé !</button>
+      </div>
+
+    </section>
+    <!-- fin séction jeu -->
     <!-- début section reduction-->
       <section id="reduction">
         <div id="margetitre">
