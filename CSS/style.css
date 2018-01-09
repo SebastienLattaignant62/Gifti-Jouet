@@ -388,10 +388,11 @@ footer {
   width: 100%;
   height: 50px;
   box-shadow: 2px 2px 1px grey;
-  background-image: linear-gradient(#F49E37, white);
+  background-image: linear-gradient(#F49E37, #F1E17F);
 }
+
 #newsletter {
-  background-color: white;
+  background-image: linear-gradient(#F1E17F, white);
   width: 100%;
   height: 150px;
   box-shadow: 2px 2px 1px grey;
@@ -410,6 +411,14 @@ footer {
   box-shadow: 2px 2px 1px grey;
   background-image: linear-gradient(white, #F1E17F);
   padding-top: 1px;
+}
+.borderreseau {
+  border-radius: 10px;
+  width: 30%;
+  height: 80px;
+  margin-left: 10px;
+  font-family: DKSun;
+  text-align: center;
 }
 /*couleur icone reseaux: */
 footer svg:not(:root).svg-inline--fa {
