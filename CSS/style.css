@@ -32,7 +32,7 @@ body {
   width: 364px;
   height: 50px;
   position: relative;
-  margin-left: 50%;
+  margin: auto;
 }
 #recherche input {
   resize: none;
@@ -178,20 +178,20 @@ a.decolien {
   background-color: rgb(8, 254, 136);
 }
 #prixvente1{
-  margin-top: 600px;
+  margin-top: 530px;
   margin-left: 185px;
 }
 #prixvente2 {
-  margin-top: 815px;
+  margin-top: 760px;
   margin-left: 205px;
 }
 #prixvente3 {
-  margin-top: 1060px;
+  margin-top: 1000px;
   margin-left: 205px;
 }
 #prixvente4 {
-  margin-top: 1260px;
-  margin-left: 80px;
+  margin-top: 1210px;
+  margin-left: 108px;
 }
 .prixpromo {
   font-family: DKSun;
@@ -213,20 +213,20 @@ a.decolien {
   color: rgb(255, 191, 0);
 }
 #prixpromo1 {
-  margin-left: 500px;
-  margin-top: 770px;
+  margin-left: 870px;
+  margin-top: 530px;
 }
 #prixpromo2 {
   margin-left: 860px;
-  margin-top: 1000px;
+  margin-top: 750px;
 }
 #prixpromo3 {
   margin-left: 860px;
-  margin-top: 1250px;
+  margin-top: 1000px;
 }
 #prixpromo4 {
   margin-left: 860px;
-  margin-top: 1490px;
+  margin-top: 1230px;
 }
 #topvente {
   width: 170px;
@@ -254,7 +254,7 @@ del {
   height: 900px;
   float: right;
   margin-right: 350px;
-  margin-top: 500px;
+  margin-top: 505px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -369,7 +369,13 @@ footer {
   font-size: 40px;
   font-family: DKSun;
   color: green;
-  
+  margin: auto;
+  padding-top:50px;
+  margin-left: 200px;
+}
+.fidel p {
+  margin-left: 200px;
+  font-weight: bold;
 }
 .fidelcarte {
   width: 250px;
